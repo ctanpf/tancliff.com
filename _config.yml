@@ -1,0 +1,37 @@
+# Site settings
+
+title: Cliff Tan 
+email: clifftanpeifeng@gmail.com
+description: Cliff Tannnnnnnnnnn
+
+
+#baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://tancliff.com" 	# the base hostname & protocol for your site
+enforce_ssl: "tancliff.com"
+
+
+twitter_username: clifftan
+github_username:  ptopenny
+facebook_username: clifftan
+instagram_username: cliff__tan
+linkedin_profile: https://www.linkedin.com/in/clifftanpeifeng
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: "/:categories/:title" # 'pretty' keeps the dates but removes .html, 'none' does not, but keeps  the .html, this removes dates and the .html
+
+kramdown: 
+    input: GFM
+
+excerpt_separator: <!-- more -->
+
+exclude: [_exclude, "README.markdown", "Gemfile.lock", "Gemfile"]
+
+sass:
+    sass_dir: assets/css/sass_libs
+    #style: compressed #cloudflare is doing this automatically
+
+gems:
+    - jekyll-sitemap
+    #- jemoji -- disabled till Jekyll 2.5 is used in Github Pages and Jemoji is updated for Jekyll 2.x.
